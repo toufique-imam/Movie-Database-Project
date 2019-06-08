@@ -1,7 +1,6 @@
 <?php
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
-
 class Add_Entity_Controller extends Controller
 {
     // 1 function define category
@@ -26,8 +25,8 @@ class Add_Entity_Controller extends Controller
     //todo 10 function separate each actor and check them whether they are already added if not then add same with genre and director
     public function AddMovie(){
         $connect = mysqli_connect(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
-        if(!$connect){
-            die("Connection Failed: ".mysqli_connect_error());
+        if (!$connect) {
+            die("Connection Failed: " . mysqli_connect_error());
         }
         $mov_title=request('title');
         $mov_overview=request('overview');
@@ -38,17 +37,15 @@ class Add_Entity_Controller extends Controller
         $cast=request('cast');
         $director=request('director');
         $mov_id=uniqid();
-        $mov_time=(ceil($mov_time));
-        $mov_year=(ceil($mov_year));
-        $query="INSERT INTO movie(mov_id,mov_title,mov_year,mov_time,mov_lang,mov_overview) values ( '".$mov_id ."' , '" .$mov_title."' , ".$mov_year." , " .$mov_time." , '".$mov_lang."' , '".$mov_overview."')";
-        $res=mysqli_query($connect,$query);
-        if($res){
+        $query = "INSERT INTO movie(mov_id,mov_title,mov_year,mov_time,mov_lang,mov_overview) values ( '" . $mov_id . "' , '" . $mov_title . "' , " . $mov_year . " , " . $mov_time . " , '" . $mov_lang . "' , '" . $mov_overview . "')";
+        $res = mysqli_query($connect, $query);
+        if ($res) {
             echo "NEW Movie ADDED";
-            mysqli_free_result(res);
-        }else{
-            echo "Error: ". $query . "<br>" .mysqli_error($connect);
+        } else {
+            die( "Error: " . $query . "<br>" . mysqli_error($connect));
         }
         mysqli_close($connect);
+
     }
     public function AddActor(){
         $connect = mysqli_connect(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
@@ -63,6 +60,7 @@ class Add_Entity_Controller extends Controller
         $res=mysqli_query($connect,$query);
         if($res){
             echo "NEW Actor ADDED";
+
         }else{
             echo "Error: ". $query . "<br>" .mysqli_error($connect);
         }
@@ -81,6 +79,7 @@ class Add_Entity_Controller extends Controller
         $res=mysqli_query($connect,$query);
         if($res){
             echo "NEW Director ADDED";
+
         }else{
             echo "Error: ". $query . "<br>" .mysqli_error($connect);
         }

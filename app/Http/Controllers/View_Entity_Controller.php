@@ -7,7 +7,7 @@ use PhpParser\Node\Stmt\Switch_;
 
 class View_Entity_Controller extends Controller
 {
-    //todo create view
+    //todo create multi level view
     public function Search(){
         $connect = mysqli_connect(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
         if(!$connect){
@@ -53,6 +53,7 @@ class View_Entity_Controller extends Controller
                 'directors'=>$director
             ]);
         }
+        mysqli_close($connect);
     }
     public function process_str($search_str){
         for($i=0;$i<strlen($search_str);$i++){

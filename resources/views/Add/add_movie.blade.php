@@ -19,12 +19,12 @@
             </label>
 
             <input name="year" value="{{ old("year") }}" type="number" class="form-control" placeholder="Release Date"
-                   required/>
+                   required min="1000" max="9999"/>
             <label for="time">
                 Run Time :
             </label>
 
-            <input name="time" value="{{ old("time") }}" type="number" class="form-control" placeholder="Run Time"
+            <input min="0" max="9999" name="time" value="{{ old("time") }}" type="number" class="form-control" placeholder="Run Time"
                    required/>
             <label for="genre">
                 Genre:
