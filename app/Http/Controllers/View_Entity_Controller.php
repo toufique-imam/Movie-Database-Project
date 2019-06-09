@@ -2,12 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use PhpParser\Node\Stmt\Switch_;
-
 class View_Entity_Controller extends Controller
 {
-    //todo create multi level view
+    //create multi level view
     public function Search(){
         $connect = mysqli_connect(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
         if(!$connect){

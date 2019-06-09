@@ -28,6 +28,7 @@
                 <th scope="col">Language</th>
                 <th scope="col">Overview</th>
                 <th scope="col">Edit</th>
+                <th scope="col">Delete</th>
             </thead>
             <tbody>
                 @foreach($movies as $movie)
@@ -38,6 +39,9 @@
                         <td>{{ $movie['mov_lang'] }}</td>
                         <td>{{ $movie['mov_overview'] }}</td>
                         <td><a href="{{ url('/Edit/' . 1 . '/'. $movie['mov_id'].'/Edit') }}" class="btn btn-xs btn-info pull-right">Edit</a></td>
+                        <td><a onclick="return confirm('Are you sure you wish to delete this Movie?');"
+                               href="{{ url('/Delete/' . 1 . '/'. $movie['mov_id'].'/Delete') }}"
+                               class="btn btn-xs btn-danger">Delete</a></td>
                     </tr>
                 @endforeach
             </tbody>
@@ -52,6 +56,7 @@
             <th scope="col">Last Name</th>
             <th scope="col">Gender</th>
             <th scope="col">Edit</th>
+            <th scope="col">Delete</th>
             </thead>
             <tbody>
             @foreach($actors as $actor)
@@ -60,6 +65,9 @@
                     <td>{{ $actor['act_lname'] }}</td>
                     <td>{{ $actor['act_gender'] }}</td>
                     <td><a href="{{ url('/Edit/' . 2 . '/'. $actor['act_id'].'/Edit') }}" class="btn btn-xs btn-info pull-right">Edit</a></td>
+                    <td><a onclick="return confirm('Are you sure you wish to delete this Actor?');"
+                           href="{{ url('/Delete/' . 2 . '/'. $actor['act_id'].'/Delete') }}"
+                           class="btn btn-xs btn-danger">Delete</a></td>
                 </tr>
             @endforeach
             </tbody>
@@ -73,6 +81,7 @@
             <th scope="col">First Name</th>
             <th scope="col">Last Name</th>
             <th scope="col">Edit</th>
+            <th scope="col">Delete</th>
             </thead>
             <tbody>
             @foreach($directors as $director)
@@ -80,6 +89,9 @@
                     <td>{{ $director['dir_fname'] }}</td>
                     <td>{{ $director['dir_lname'] }}</td>
                     <td><a href="{{ url('/Edit/' . 3 . '/'. $director['dir_id'].'/Edit') }}" class="btn btn-xs btn-info pull-right">Edit</a></td>
+                    <td><a onclick="return confirm('Are you sure you wish to delete this Director?');"
+                           href="{{ url('/Delete/' . 3 . '/'. $director['dir_id'].'/Delete') }}"
+                           class="btn btn-xs btn-danger">Delete</a></td>
                 </tr>
             @endforeach
             </tbody>

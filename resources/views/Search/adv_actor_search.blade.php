@@ -45,7 +45,9 @@
                 <th scope="col">First Name</th>
                 <th scope="col">Last Name</th>
                 <th scope="col">Gender</th>
+                <th scope="col">Details</th>
                 <th scope="col">Edit</th>
+                <th scope="col">Delete</th>
                 </thead>
                 <tbody>
                 @foreach($data as $actor)
@@ -53,7 +55,12 @@
                         <td>{{ $actor['act_fname'] }}</td>
                         <td>{{ $actor['act_lname'] }}</td>
                         <td>{{ $actor['act_gender'] }}</td>
+                        <td><a href="{{ url('/Details/' . 2 . '/'. $actor['act_id'].'/Details') }}"
+                               class="btn btn-xs btn-info">Details</a></td>
                         <td><a href="{{ url('/Edit/' . 2 . '/'. $actor['act_id'].'/Edit') }}" class="btn btn-xs btn-info">Edit</a></td>
+                        <td><a onclick="return confirm('Are you sure you wish to delete this Actor?');"
+                               href="{{ url('/Delete/' . 2 . '/'. $actor['act_id'].'/Delete') }}"
+                               class="btn btn-xs btn-danger">Delete</a></td>
                     </tr>
                 @endforeach
                 </tbody>

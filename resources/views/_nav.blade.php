@@ -30,12 +30,6 @@
                         <a class="nav-link text-light" href="Add">Add</a>
                     </li>
                     <li>
-                        <a class="nav-link text-light" href="Edit">Edit</a>
-                    </li>
-                    <li>
-                        <a class="nav-link text-light" href="Delete">Delete</a>
-                    </li>
-                    <li>
                         <a class="nav-link text-light" href="AdvanceSearch">Advance Search</a>
                     </li>
                 </ul>

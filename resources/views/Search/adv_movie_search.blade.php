@@ -54,8 +54,9 @@
             <br>
             <button class="btn btn-outline-dark" type="Submit">Search</button>
             @csrf
+            <hr/>
         </form>
-        <hr>
+
         @if(isset($data) && sizeof($data))
             <h5> Search Results for Movies:</h5>
             <table class="table table-hover table-dark">
@@ -65,7 +66,9 @@
                 <th scope="col">Run Time</th>
                 <th scope="col">Language</th>
                 <th scope="col">Overview</th>
+                <th scope="col">Details</th>
                 <th scope="col">Edit</th>
+                <th scope="col">Delete</th>
                 </thead>
                 <tbody>
                 @foreach($data as $movie)
@@ -75,7 +78,13 @@
                         <td>{{ $movie['mov_time'] }}</td>
                         <td>{{ $movie['mov_lang'] }}</td>
                         <td>{{ $movie['mov_overview'] }}</td>
-                        <td><a href="{{ url('/Edit/' . 1 . '/'. $movie['mov_id'].'/Edit') }}" class="btn btn-xs btn-info">Edit</a></td>
+                        <td><a href="{{ url('/Details/' . 1 . '/'. $movie['mov_id'].'/Details') }}"
+                               class="btn btn-xs btn-info">Details</a></td>
+                        <td><a href="{{ url('/Edit/' . 1 . '/'. $movie['mov_id'].'/Edit') }}"
+                               class="btn btn-xs btn-info">Edit</a></td>
+                        <td><a onclick="return confirm('Are you sure you wish to delete this Movie?');"
+                               href="{{ url('/Delete/' . 1 . '/'. $movie['mov_id'].'/Delete') }}"
+                               class="btn btn-xs btn-danger">Delete</a></td>
                     </tr>
                 @endforeach
                 </tbody>
