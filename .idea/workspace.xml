@@ -1,23 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f1ac93c8-74c4-42df-801e-f6e894614f9e" name="Default Changelist" comment="Added Edit Button">
-      <change afterPath="$PROJECT_DIR$/resources/views/Details/DetailsView.blade.php" afterDir="false" />
+    <list default="true" id="f1ac93c8-74c4-42df-801e-f6e894614f9e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdvanceSearch_Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdvanceSearch_Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Delete_Entity_Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Delete_Entity_Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/View_Entity_Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/View_Entity_Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/database_query.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Add/Add_entity.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Add/Add_entity.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Delete/delete_actor.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Delete/delete_director.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Delete/delete_movie.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Search/adv_actor_search.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Search/adv_actor_search.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Search/adv_director_search.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Search/adv_director_search.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Search/adv_movie_search.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Search/adv_movie_search.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Search/search_res.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Search/search_res.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/_nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/_nav.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,36 +21,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Add_Entity_Controller.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="104" column="48" selection-start-line="104" selection-start-column="48" selection-end-line="104" selection-end-column="48" />
-              <folding>
-                <element signature="e#226#601#0#PHP" />
-                <element signature="e#282#351#0#PHP" />
-                <element signature="e#302#350#1#PHP" />
-                <element signature="e#395#595#0#PHP" />
-                <element signature="e#467#595#0#PHP" />
-                <element signature="e#534#595#0#PHP" />
-                <element signature="e#607#2023#0#PHP" />
-                <element signature="e#726#1561#0#PHP" />
-                <element signature="e#777#1551#0#PHP" />
-                <element signature="e#900#1477#0#PHP" />
-                <element signature="e#988#1147#0#PHP" />
-                <element signature="e#1201#1308#0#PHP" />
-                <element signature="e#1492#1551#0#PHP" />
-                <element signature="e#1570#1996#0#PHP" />
-                <element signature="e#1646#1781#0#PHP" />
-                <element signature="e#1819#1910#0#PHP" />
-                <element signature="e#2320#2411#0#PHP" />
-                <element signature="e#3034#3179#0#PHP" />
-                <element signature="e#3092#3179#0#PHP" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DetailsView_Controller.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -115,7 +70,7 @@
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Delete_Entity_Controller.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="101">
-              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -124,90 +79,43 @@
         <entry file="file://$PROJECT_DIR$/resources/views/Search/adv_director_search.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="467">
-              <caret line="47" column="27" lean-forward="true" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
+              <caret line="49" column="27" lean-forward="true" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/View_Entity_Controller.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="16" column="63" lean-forward="true" selection-start-line="16" selection-start-column="63" selection-end-line="16" selection-end-column="63" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/View_Entity_Controller.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="82">
-              <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-              <folding>
-                <element signature="e#40#68#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="323">
+              <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/Search/adv_actor_search.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/Add/Add_entity.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="52" column="41" lean-forward="true" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
+            <state relative-caret-position="228">
+              <caret line="12" column="93" lean-forward="true" selection-start-line="12" selection-start-column="93" selection-end-line="12" selection-end-column="93" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdvanceSearch_Controller.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/Search/search_res.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="128" column="37" selection-start-line="128" selection-start-column="37" selection-end-line="128" selection-end-column="37" />
-              <folding>
-                <element signature="e#152#541#0#PHP" />
-                <element signature="e#207#274#0#PHP" />
-                <element signature="e#227#273#1#PHP" />
-                <element signature="e#316#535#0#PHP" />
-                <element signature="e#393#535#0#PHP" />
-                <element signature="e#465#535#0#PHP" />
-                <element signature="e#546#1962#0#PHP" />
-                <element signature="e#665#1500#0#PHP" />
-                <element signature="e#716#1490#0#PHP" />
-                <element signature="e#839#1416#0#PHP" />
-                <element signature="e#927#1086#0#PHP" />
-                <element signature="e#1140#1247#0#PHP" />
-                <element signature="e#1431#1490#0#PHP" />
-                <element signature="e#1509#1935#0#PHP" />
-                <element signature="e#1585#1720#0#PHP" />
-                <element signature="e#1758#1849#0#PHP" />
-                <element signature="e#1986#2509#0#PHP" />
-                <element signature="e#0#132#2" />
-                <element signature="e#0#130#1" />
-                <element signature="e#37#132#0" />
-                <element signature="e#85#132#0" />
-                <element signature="e#2234#2556#0#PHP" />
-                <element signature="e#2430#2516#0#PHP" />
-                <element signature="e#2515#3049#0#PHP" />
-                <element signature="e#0#138#1" />
-                <element signature="e#40#142#0" />
-                <element signature="e#85#133#0" />
-                <element signature="e#2740#2968#0#PHP" />
-                <element signature="e#2877#2968#0#PHP" />
-                <element signature="e#3055#3581#0#PHP" />
-                <element signature="e#0#138#1" />
-                <element signature="e#38#134#0" />
-                <element signature="e#90#135#0" />
-                <element signature="e#3262#3490#0#PHP" />
-                <element signature="e#3399#3490#0#PHP" />
-                <element signature="e#667#754#0#PHP" />
-                <element signature="e#0#176#2" />
-                <element signature="e#3216#3302#0#PHP" />
-                <element signature="e#4859#5755#0#PHP" />
-                <element signature="e#3434#3521#0#PHP" />
-                <element signature="e#0#129#2" />
-                <element signature="e#2306#2382#0#PHP" />
-                <element signature="e#2337#2381#0#PHP" />
-                <element signature="e#4074#4160#0#PHP" />
-                <element signature="e#5761#6589#0#PHP" />
-                <element signature="e#2644#2731#0#PHP" />
-                <element signature="e#0#102#2" />
-                <element signature="e#4628#4956#0#PHP" />
-                <element signature="e#3099#3178#0#PHP" />
-                <element signature="e#3133#3177#0#PHP" />
-                <element signature="e#4870#4956#0#PHP" />
-              </folding>
+            <state relative-caret-position="342">
+              <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -246,8 +154,6 @@
         <option value="$PROJECT_DIR$/resources/views/Edit/EditView.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Edit_Entity_Controller.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Add_Entity_Controller.php" />
-        <option value="$PROJECT_DIR$/resources/views/Search/search_res.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/Add/Add_entity.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/_nav.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AdvanceSearch_Controller.php" />
         <option value="$PROJECT_DIR$/resources/views/Search/adv_movie_search.blade.php" />
@@ -258,6 +164,9 @@
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Delete_Entity_Controller.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/View_Entity_Controller.php" />
+        <option value="$PROJECT_DIR$/resources/views/Add/Add_entity.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/Search/search_res.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
       </list>
     </option>
   </component>
@@ -439,7 +348,7 @@
       <workItem from="1559944958201" duration="14689000" />
       <workItem from="1559963166633" duration="8606000" />
       <workItem from="1559981975216" duration="6995000" />
-      <workItem from="1560020884793" duration="31380000" />
+      <workItem from="1560020884793" duration="32303000" />
     </task>
     <task id="LOCAL-00001" summary="Some Search Option Added">
       <created>1559985021628</created>
@@ -462,11 +371,25 @@
       <option name="project" value="LOCAL" />
       <updated>1560042327775</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Delete Edit Details View Added">
+      <created>1560065328951</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1560065328951</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Delete Edit Details View Added">
+      <created>1560066112593</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1560066112593</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61670000" />
+    <option name="totallyTimeSpent" value="62593000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -491,7 +414,7 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="TODO" order="6" visible="true" weight="0.5470588" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.5470588" />
       <window_info anchor="bottom" id="Docker" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.65294117" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
@@ -539,7 +462,8 @@
     </ignored-roots>
     <MESSAGE value="Some Search Option Added" />
     <MESSAGE value="Added Edit Button" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Edit Button" />
+    <MESSAGE value="Delete Edit Details View Added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete Edit Details View Added" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -579,13 +503,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
@@ -650,24 +567,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Search/search_res.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="41" column="157" selection-start-line="41" selection-start-column="157" selection-end-line="41" selection-end-column="157" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/Search/advance_Search.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="23" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Add/Add_entity.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -732,7 +635,7 @@
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdvanceSearch_Controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
-          <caret line="128" column="37" selection-start-line="128" selection-start-column="37" selection-end-line="128" selection-end-column="37" />
+          <caret line="125" column="37" selection-start-line="125" selection-start-column="37" selection-end-line="125" selection-end-column="37" />
           <folding>
             <element signature="e#152#541#0#PHP" />
             <element signature="e#207#274#0#PHP" />
@@ -834,17 +737,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Details/DetailsView.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="78" column="61" lean-forward="true" selection-start-line="78" selection-start-column="61" selection-end-line="78" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/Search/adv_director_search.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="467">
-          <caret line="47" column="27" lean-forward="true" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
+          <caret line="49" column="27" lean-forward="true" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -871,17 +767,42 @@
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Delete_Entity_Controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="101">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/View_Entity_Controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="304">
+          <caret line="16" column="63" lean-forward="true" selection-start-line="16" selection-start-column="63" selection-end-line="16" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/Add/Add_entity.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="93" lean-forward="true" selection-start-line="12" selection-start-column="93" selection-end-line="12" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/Search/search_res.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/Details/DetailsView.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="78" column="61" lean-forward="true" selection-start-line="78" selection-start-column="61" selection-end-line="78" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
         </state>
       </provider>
     </entry>
