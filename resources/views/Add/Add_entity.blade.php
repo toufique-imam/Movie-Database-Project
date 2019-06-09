@@ -1,8 +1,9 @@
 @extends('_shared')
 
 @section('content')
-    <h1>Add A Entry</h1>
     <div class="container">
+        <h3>Add A Entry</h3>
+        <hr/>
         <form class="pd-5" action="category" method="post">
             <div class="input-group">
                 <div class="input-group-prepend">
