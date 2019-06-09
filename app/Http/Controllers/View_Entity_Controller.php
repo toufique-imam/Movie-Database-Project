@@ -20,6 +20,7 @@ class View_Entity_Controller extends Controller
             $movie=$this->fetch_movie($search_string,$connect);
             $actor=$this->fetch_actor($search_string,$connect);
             $director=$this->fetch_director($search_string,$connect);
+            //dd($movie);
             return View('Search.search_res',[
                'movies'=>$movie,
                'actors'=>$actor,
@@ -68,8 +69,9 @@ class View_Entity_Controller extends Controller
             $ans= mysqli_fetch_all($res,MYSQLI_ASSOC);
             mysqli_free_result($res);
             return $ans;
+            //dd($ans);
         }else{
-            echo "Error_Mov: ". $sql . "<br>" .mysqli_error($connect);
+            die( "Error_Mov: ". $sql . "<br>" .mysqli_error($connect));
         }
         return Array();
     }

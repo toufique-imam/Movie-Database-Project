@@ -18,7 +18,7 @@
         @csrf
     </form>
     <hr/>
-    @if(isset($moveis) and sizeof($movies)>0)
+    @if(isset($movies) and sizeof($movies)>0)
         <h5> Search Results for Movies:</h5>
         <table class="table table-hover table-dark">
             <thead>
@@ -27,6 +27,7 @@
                 <th scope="col">Run Time</th>
                 <th scope="col">Language</th>
                 <th scope="col">Overview</th>
+                <th scope="col">Edit</th>
             </thead>
             <tbody>
                 @foreach($movies as $movie)
@@ -36,6 +37,7 @@
                         <td>{{ $movie['mov_time'] }}</td>
                         <td>{{ $movie['mov_lang'] }}</td>
                         <td>{{ $movie['mov_overview'] }}</td>
+                        <td><a href="{{ url('/Edit/' . 1 . '/'. $movie['mov_id'].'/Edit') }}" class="btn btn-xs btn-info pull-right">Edit</a></td>
                     </tr>
                 @endforeach
             </tbody>
@@ -49,6 +51,7 @@
             <th scope="col">First Name</th>
             <th scope="col">Last Name</th>
             <th scope="col">Gender</th>
+            <th scope="col">Edit</th>
             </thead>
             <tbody>
             @foreach($actors as $actor)
@@ -56,6 +59,7 @@
                     <td>{{ $actor['act_fname'] }}</td>
                     <td>{{ $actor['act_lname'] }}</td>
                     <td>{{ $actor['act_gender'] }}</td>
+                    <td><a href="{{ url('/Edit/' . 2 . '/'. $actor['act_id'].'/Edit') }}" class="btn btn-xs btn-info pull-right">Edit</a></td>
                 </tr>
             @endforeach
             </tbody>
@@ -68,12 +72,14 @@
             <thead>
             <th scope="col">First Name</th>
             <th scope="col">Last Name</th>
+            <th scope="col">Edit</th>
             </thead>
             <tbody>
             @foreach($directors as $director)
                 <tr>
                     <td>{{ $director['dir_fname'] }}</td>
                     <td>{{ $director['dir_lname'] }}</td>
+                    <td><a href="{{ url('/Edit/' . 3 . '/'. $director['dir_id'].'/Edit') }}" class="btn btn-xs btn-info pull-right">Edit</a></td>
                 </tr>
             @endforeach
             </tbody>

@@ -31,13 +31,14 @@
                 <thead>
                 <th scope="col">First Name</th>
                 <th scope="col">Last Name</th>
-                <th scope="col">Gender</th>
+                <th scope="col">Edit</th>
                 </thead>
                 <tbody>
                 @foreach($data as $director)
                     <tr>
                         <td>{{ $director['dir_fname'] }}</td>
                         <td>{{ $director['dir_lname'] }}</td>
+                        <td><a href="{{ url('/Edit/' . 3 . '/'. $director['dir_id'].'/Edit') }}" class="btn btn-xs btn-info">Edit</a></td>
                     </tr>
                 @endforeach
                 </tbody>

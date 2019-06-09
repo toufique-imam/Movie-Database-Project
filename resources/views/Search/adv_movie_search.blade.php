@@ -65,6 +65,7 @@
                 <th scope="col">Run Time</th>
                 <th scope="col">Language</th>
                 <th scope="col">Overview</th>
+                <th scope="col">Edit</th>
                 </thead>
                 <tbody>
                 @foreach($data as $movie)
@@ -74,6 +75,7 @@
                         <td>{{ $movie['mov_time'] }}</td>
                         <td>{{ $movie['mov_lang'] }}</td>
                         <td>{{ $movie['mov_overview'] }}</td>
+                        <td><a href="{{ url('/Edit/' . 1 . '/'. $movie['mov_id'].'/Edit') }}" class="btn btn-xs btn-info">Edit</a></td>
                     </tr>
                 @endforeach
                 </tbody>

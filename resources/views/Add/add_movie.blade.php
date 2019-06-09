@@ -35,7 +35,7 @@
                 Director:
             </label>
             <input name="director" value="{{ old('director') }}" type="text" class="form-control"
-                   placeholder="Director">
+                   placeholder="Director" required>
             <label for="cast">
                 Cast:
             </label>
@@ -46,7 +46,7 @@
                 Overview:
             </label>
             <textarea name="overview" value="" {{ old('overview') }} class="form-control"
-                      placeholder="OverView"></textarea>
+                      placeholder="OverView" required></textarea>
             <br>
             <hr>
             <button type="submit" class="btn btn-outline-success"> Submit</button>
