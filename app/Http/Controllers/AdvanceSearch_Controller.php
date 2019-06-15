@@ -66,7 +66,8 @@ class AdvanceSearch_Controller extends Controller
 
     public function Search_Actor_Of_Movie($movie_id, $connect)
     {
-        $sql = "SELECT * FROM actor WHERE act_id IN( SELECT act_id FROM movie_cast WHERE mov_id IN ( SELECT mov_id FROM movie WHERE mov_id='" . $movie_id . "'));";
+        //$sql = "SELECT * FROM actor WHERE act_id IN( SELECT act_id FROM movie_cast WHERE mov_id IN ( SELECT mov_id FROM movie WHERE mov_id='" . $movie_id . "'));";
+        $sql = "SELECT * FROM actor WHERE act_id IN( SELECT act_id FROM movie_cast INNER JOIN movie on movie.mov_id=movie_cast.mov_id AND movie.mov_id=" . $movie_id;
         $res = mysqli_query($connect, $sql);
         if ($res) {
             $ans = mysqli_fetch_all($res, MYSQLI_ASSOC);
@@ -172,6 +173,43 @@ class AdvanceSearch_Controller extends Controller
                 'data' => $ans
             ]);
             //   return $ans;
+        } else {
+            die("Error_Mov: " . $sql . "<br>" . mysqli_error($connect));
+        }
+    }
+
+    public function latest()
+    {
+        $connect = mysqli_connect(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
+        if (!$connect) {
+            die("Connection Failed: " . mysqli_connect_error());
+        }
+        $sql = "SELECT `max_movie`() AS `max_movie`;";
+        $res = mysqli_query($connect, $sql);
+        if ($res) {
+            $ff = mysqli_fetch_all($res, MYSQLI_ASSOC);
+            $ans = $ff[0]["max_movie"];
+
+            return $this->get_movie($connect, "", "", $ans, $ans, 0, 9999);
+        } else {
+            die("Error: " . $sql . "<br>" . mysqli_error($connect));
+        }
+    }
+
+    public function get_movie($connect, $title, $lang, $rel_from, $rel_to, $run_from, $run_to)
+    {
+        $rel_from--;
+        $rel_to++;
+        $run_from--;
+        $run_to++;
+        $sql = "SELECT * FROM movie WHERE mov_title LIKE '%" . $title . "%' AND mov_lang LIKE '%" . $lang . "%' AND mov_year<" . $rel_to . " AND mov_year>" . $rel_from . " AND mov_time<" . $run_to . " AND mov_time>" . $run_from . " ORDER BY mov_year ASC";
+        $res = mysqli_query($connect, $sql);
+        if ($res) {
+            $ans = mysqli_fetch_all($res, MYSQLI_ASSOC);
+            mysqli_free_result($res);
+            return View('Search.adv_movie_search', [
+                'data' => $ans
+            ]);
         } else {
             die("Error_Mov: " . $sql . "<br>" . mysqli_error($connect));
         }

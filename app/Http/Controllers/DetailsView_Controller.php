@@ -2,14 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use Illuminate\View\View;
-
 class DetailsView_Controller extends Controller
 {
     public function Search_Actor_Of_Movie($movie_id, $connect)
     {
-        $sql = "SELECT * FROM actor WHERE act_id IN( SELECT act_id FROM movie_cast WHERE mov_id IN ( SELECT mov_id FROM movie WHERE mov_id='" . $movie_id . "'));";
+        //$sql = "SELECT * FROM actor WHERE act_id IN( SELECT act_id FROM movie_cast WHERE mov_id IN ( SELECT mov_id FROM movie WHERE mov_id='" . $movie_id . "'));";
+        $sql = "SELECT * FROM actor WHERE act_id IN ( SELECT act_id FROM movie_cast INNER JOIN movie on movie.mov_id=movie_cast.mov_id AND movie.mov_id='" . $movie_id . "')";
         $res = mysqli_query($connect, $sql);
         if ($res) {
             $ans = mysqli_fetch_all($res, MYSQLI_ASSOC);
@@ -147,4 +145,5 @@ class DetailsView_Controller extends Controller
             return null;
         }
     }
+
 }

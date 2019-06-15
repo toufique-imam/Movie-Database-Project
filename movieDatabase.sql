@@ -13,12 +13,6 @@ CREATE TABLE director (
     PRIMARY KEY (dir_id)
 );
 
-CREATE TABLE reviewer (
-    rev_id varchar(50) NOT NULL,
-    rev_name varchar(30),
-    PRIMARY KEY(rev_id)
-);
-
 CREATE TABLE movie (
     mov_id varchar(50) NOT NULL,
     mov_title varchar(50),
@@ -55,14 +49,11 @@ CREATE TABLE movie_genres (
     FOREIGN KEY(mov_id) REFERENCES movie(mov_id) ON DELETE CASCADE,
     FOREIGN KEY(gen_id) REFERENCES genres(gen_id) ON DELETE CASCADE
 );
-
-
-CREATE TABLE rating (
-    mov_id varchar(50),
-    rev_id varchar(50),
-    rev_starts integer,
-    num_o_ratings integer,
-    FOREIGN KEY(mov_id) REFERENCES movie(mov_id) ON DELETE CASCADE,
-    FOREIGN KEY(rev_id) REFERENCES reviewer(rev_id) ON DELETE CASCADE
-);
+CREATE TRIGGER `check_date`
+    BEFORE INSERT
+    ON `movie`
+    FOR EACH ROW IF NEW.mov_year < 1900 THEN SET NEW.mov_year = 1900; END IF;
+CREATE FUNCTION max_movie() RETURNS INT
+    RETURN (SELECT MAX(mov_year)
+            FROM movie);
 

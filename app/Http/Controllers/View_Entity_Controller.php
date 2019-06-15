@@ -59,6 +59,25 @@ class View_Entity_Controller extends Controller
         }
         return $search_str;
     }
+
+    public function all_movie()
+    {
+        $connect = mysqli_connect(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
+        if (!$connect) {
+            die("Connection Failed: " . mysqli_connect_error());
+        }
+        $sql = "CALL `show_all_movie`()";
+        $res = mysqli_query($connect, $sql);
+        if ($res) {
+            $ans = mysqli_fetch_all($res, MYSQLI_ASSOC);
+            mysqli_free_result($res);
+            return View('Search.search_res', [
+                'movies' => $ans
+            ]);
+        } else {
+            die("Error_Mov: " . $sql . "<br>" . mysqli_error($connect));
+        }
+    }
     public function fetch_movie($search_str,$connect){
         $sql = "SELECT * FROM movie WHERE mov_title LIKE '%".$search_str."%' ORDER BY mov_year ASC";
         $res=mysqli_query($connect,$sql);
@@ -96,4 +115,5 @@ class View_Entity_Controller extends Controller
         }
         return Array();
     }
+
 }
