@@ -53,6 +53,7 @@ CREATE TRIGGER `check_date`
     BEFORE INSERT
     ON `movie`
     FOR EACH ROW IF NEW.mov_year < 1900 THEN SET NEW.mov_year = 1900; END IF;
+
 CREATE FUNCTION max_movie() RETURNS INT
     RETURN (SELECT MAX(mov_year)
             FROM movie);

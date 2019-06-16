@@ -32,6 +32,12 @@
                     <li>
                         <a class="nav-link text-light" href="AdvanceSearch">Advance Search</a>
                     </li>
+                    <li>
+                        <a class="nav-link text-light" href="show_latest">Latest Movies</a>
+                    </li>
+                    <li>
+                        <a class="nav-link text-light" href="all_movie">All Movie List</a>
+                    </li>
                 </ul>
             </div>
         </div>

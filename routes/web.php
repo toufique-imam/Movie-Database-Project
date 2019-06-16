@@ -20,7 +20,11 @@ Route::view('/Edit/{category}/{problem_id}/Add', 'Add\Add_entity');
 Route::view('/Details/{category}/{problem_id}/Add', 'Add\Add_entity');
 
 Route::get('/show_latest', 'AdvanceSearch_Controller@latest');
+Route::get('Edit/{category}/{problem_id}/show_latest', 'AdvanceSearch_Controller@latest');
+Route::get('Details/{category}/{problem_id}/show_latest', 'AdvanceSearch_Controller@latest');
 Route::get('/all_movie', 'View_Entity_Controller@all_movie');
+Route::get('Edit/{category}/{problem_id}/all_movie', 'View_Entity_Controller@all_movie');
+Route::get('Details/{category}/{problem_id}/all_movie', 'View_Entity_Controller@all_movie');
 Route::view('Delete','Delete\delete_actor');
 Route::view('/Edit/{category}/{problem_id}/Delete', 'Delete\delete_actor');
 Route::view('/Details/{category}/{problem_id}/Delete', 'Delete\delete_actor');

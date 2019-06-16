@@ -31,6 +31,7 @@
                 <th scope="col">Run Time</th>
                 <th scope="col">Language</th>
                 <th scope="col">Overview</th>
+                <th scope="col">Details</th>
                 <th scope="col">Edit</th>
                 <th scope="col">Delete</th>
                 </thead>
@@ -42,6 +43,8 @@
                         <td>{{ $movie['mov_time'] }}</td>
                         <td>{{ $movie['mov_lang'] }}</td>
                         <td>{{ $movie['mov_overview'] }}</td>
+                        <td><a href="{{ url('/Details/' . 1 . '/'. $movie['mov_id'].'/Details') }}"
+                               class="btn btn-xs btn-info">Details</a></td>
                         <td><a href="{{ url('/Edit/' . 1 . '/'. $movie['mov_id'].'/Edit') }}"
                                class="btn btn-xs btn-info pull-right">Edit</a></td>
                         <td><a onclick="return confirm('Are you sure you wish to delete this Movie?');"
@@ -60,6 +63,7 @@
                 <th scope="col">First Name</th>
                 <th scope="col">Last Name</th>
                 <th scope="col">Gender</th>
+                <th scope="col">Details</th>
                 <th scope="col">Edit</th>
                 <th scope="col">Delete</th>
                 </thead>
@@ -69,6 +73,8 @@
                         <td>{{ $actor['act_fname'] }}</td>
                         <td>{{ $actor['act_lname'] }}</td>
                         <td>{{ $actor['act_gender'] }}</td>
+                        <td><a href="{{ url('/Details/' . 2 . '/'. $actor['act_id'].'/Details') }}"
+                               class="btn btn-xs btn-info">Details</a></td>
                         <td><a href="{{ url('/Edit/' . 2 . '/'. $actor['act_id'].'/Edit') }}"
                                class="btn btn-xs btn-info pull-right">Edit</a></td>
                         <td><a onclick="return confirm('Are you sure you wish to delete this Actor?');"
@@ -86,6 +92,7 @@
                 <thead>
                 <th scope="col">First Name</th>
                 <th scope="col">Last Name</th>
+                <th scope="col">Details</th>
                 <th scope="col">Edit</th>
                 <th scope="col">Delete</th>
                 </thead>
@@ -94,6 +101,8 @@
                     <tr>
                         <td>{{ $director['dir_fname'] }}</td>
                         <td>{{ $director['dir_lname'] }}</td>
+                        <td><a href="{{ url('/Details/' . 3 . '/'. $director['mov_id'].'/Details') }}"
+                               class="btn btn-xs btn-info">Details</a></td>
                         <td><a href="{{ url('/Edit/' . 3 . '/'. $director['dir_id'].'/Edit') }}"
                                class="btn btn-xs btn-info pull-right">Edit</a></td>
                         <td><a onclick="return confirm('Are you sure you wish to delete this Director?');"

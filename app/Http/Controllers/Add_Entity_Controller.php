@@ -2,10 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use phpDocumentor\Reflection\Types\Object_;
-use function Sodium\add;
-
 class Add_Entity_Controller extends Controller
 {
     // 1 function define category
@@ -96,7 +92,7 @@ class Add_Entity_Controller extends Controller
         $this->AddMovieGenre($genre, $mov_id,$connect);
         $this->AddMovieDir($director, $mov_id,$connect);
         mysqli_close($connect);
-        return redirect('/');
+        return redirect('Add');
     }
 
     public function AddMovieCast(string $xd, string $mov_id,$connect)
@@ -228,7 +224,7 @@ class Add_Entity_Controller extends Controller
         if ($res) {
             echo "NEW Actor ADDED";
             mysqli_close($connect);
-            return redirect('/');
+            return redirect('Add');
         } else {
             die("Error: " . $query . "<br>" . mysqli_error($connect));
         }
@@ -266,7 +262,7 @@ class Add_Entity_Controller extends Controller
             die( "Error: " . $query . "<br>" . mysqli_error($connect));
         }
         mysqli_close($connect);
-        return redirect('/');
+        return redirect('Add');
     }
     public function AddDirectorM(string $dir_fname,string $dir_lname,$connect)
     {
